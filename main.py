@@ -15,5 +15,5 @@ def validarCalificacion():
             print("ingresa una calificación valida (debe ser un numérica)")
 
 calificacion = validarCalificacion()
-print(calificacion)
+
 
