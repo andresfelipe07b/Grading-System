@@ -1,12 +1,12 @@
 #se declara la variable y se le asigna el tipo
-initialGrade:float
+initial_grade: float
 grades: list[float]
 grade: float
-specificValue:float
+specific_value: float
 
 #esta función válida la calificación que se ingresa, primero válida que coincida el tipo de dato, tambien válida que
 #se encuentre dentro del rango establecido
-def validateGrade():
+def validate_grade():
     while True:
         try:
             value = float(input("ingresa una calificacion numerica (de 0 a 100): "))
@@ -18,48 +18,43 @@ def validateGrade():
             print("ingresa una calificación valida (debe ser un numérica)")
 
 #calcula el promedio de las calificaciones
-def calculateAverage(gradeList: list[float]):
+def calculate_average(grade_list: list[float]):
     sum = 0
-    for grade in gradeList:
+    for grade in grade_list:
         sum += grade
-    return sum / len(gradeList)
+    return sum / len(grade_list)
 
 #solicita las calificaciones
-def askGrades():
-    grades = []
+def ask_grades():
+    grade_list = []
     for i in range(5):
         grade = input(f"Ingresa la calificacion {i+1}:")
-        grades.append(float(grade))
-    return grades
+        grade_list.append(float(grade))
+    return grade_list
 
-def countHigherGrades(gradeList: list[float], specificValue: float):
+def count_higher_grades(grade_list: list[float], value: float):
     counter = 0
     i = 0
-    while i < len(gradeList):
-        if gradeList[i] > specificValue:
+    while i < len(grade_list):
+        if grade_list[i] > value:
             counter += 1
         i += 1
     return counter
 
 
-initialGrade = validateGrade()
+initial_grade = validate_grade()
 
-if initialGrade >= 80:
+if initial_grade >= 80:
     print("Aprobado")
-elif initialGrade >= 65 <80:
+elif initial_grade >= 65 <80:
     print("Regular")
 else:
     print("Reprobado")
 
-grades = askGrades()
-print(f"Tu promedio es: {calculateAverage(grades)}")
+grades = ask_grades()
+print(f"Tu promedio es: {calculate_average(grades)}")
 
 
-specificValue = float(input("Ingresa el valor para comparar las calificaciones: "))
-cantidadMayores = countHigherGrades(grades, specificValue)
-print(f"Hay {cantidadMayores} calificaciones mayores que {specificValue}")
-
-
-
-
-
+specific_value = float(input("Ingresa el valor para comparar las calificaciones: "))
+cantidad_mayores = count_higher_grades(grades, specific_value)
+print(f"Hay {cantidad_mayores} calificaciones mayores que {specific_value}")
