@@ -147,5 +147,3 @@ print(f"Hay {cantidad_mayores} calificaciones mayores que {specific_value}")
 
 match_value = match_grades(grades, specific_value)
 print(f"Hay {match_value} calificaciones que coinciden con {specific_value}")
-
-print("prueba")
