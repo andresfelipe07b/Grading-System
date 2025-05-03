@@ -32,7 +32,7 @@ Este proyecto en Python permite validar, analizar y clasificar calificaciones nu
 
 ```bash
 git clone https://github.com/andresfelipe07b/Sistema-de-calificaciones-y-estadisticas
-cd sistema-de-calificaciones
+cd sistema-de-calificaciones-y-estadisticas
 ```
 
 3. Ejecuta el script en consola
