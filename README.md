@@ -1,4 +1,7 @@
-# 📊 Sistema de calificaciones 
+# 📊 Sistema de calificaciones
+
+## 📘 English version
+[click here to see the README in english version](README.en.md)
 
 Este proyecto en Python permite validar, analizar y clasificar calificaciones numéricas ingresadas por el usuario. Se enfoca en prácticas de entrada de datos, validación, estructuras de control y funciones.
 
@@ -31,8 +34,8 @@ Este proyecto en Python permite validar, analizar y clasificar calificaciones nu
 2. Descarga el archivo `.py` del repositorio.
 
 ```bash
-git clone https://github.com/andresfelipe07b/Sistema-de-calificaciones-y-estadisticas
-cd sistema-de-calificaciones-y-estadisticas
+git clone https://github.com/andresfelipe07b/Grading-System
+cd Grading-System
 ```
 
 3. Ejecuta el script en consola
