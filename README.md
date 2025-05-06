@@ -1,7 +1,7 @@
 # 📊 Sistema de calificaciones
 
 ## 📘 English version
-[click here to see the README in english version](README.en.md)
+[Click here to see the README in english version](README.en.md)
 
 Este proyecto en Python permite validar, analizar y clasificar calificaciones numéricas ingresadas por el usuario. Se enfoca en prácticas de entrada de datos, validación, estructuras de control y funciones.
 
